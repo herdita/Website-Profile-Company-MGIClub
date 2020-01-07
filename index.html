@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <title>MGI Club</title>
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-image: url("assets/background_main.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        word-spacing: 0.3px;
+        letter-spacing: 0.5px;
+    }
+    /*
+    .
+    main1 navbar & carausel
+    .
+    */
+    
+    .main1 {
+        background: rgba(247, 247, 247, 0.900);
+        padding-bottom: 1px;
+    }
+    
+    .main1 .navbar-hr {
+        border-bottom: 0.6px solid rgba(177, 177, 177, 0.92);
+    }
+    
+    .main1 a {
+        color: #484848;
+        font-size: 14px;
+    }
+    
+    .main1 a.nav-item {
+        margin-right: 15px;
+    }
+    /* main1 carausel */
+    
+    .main1 .carausel {
+        display: inline;
+        position: absolute;
+    }
+    
+    .main1 .carausel h4 {
+        color: #484848;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-top: -100px
+    }
+    
+    .main1 .carausel p {
+        color: #484848;
+        text-align: center;
+        padding-right: 20%;
+        padding-left: 20%;
+        line-height: 27px;
+    }
+    /* @media only screen and (max-width: 768px) {
+        .main1 .carausel img {
+            opacity: 0.3;
+            position: absolute;
+            padding-top: 50px;
+        }
+        .main1 .carausel h5 {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+        .main1 .carausel p {
+            font-size: small;
+        }
+    } */
+    /* main1 link wa button */
+    
+    .main1 .link_wa {
+        margin-top: 500px;
+    }
+    
+    .main1 .link_wa button {
+        width: 160px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+    /*
+    .
+    main2 menu tentang
+    .
+    */
+    
+    .main2 {
+        background: rgba(247, 247, 247, 0.900);
+    }
+    
+    .main2 .about {
+        padding-top: 75px;
+    }
+    
+    .main2 a {
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: #484848b7;
+    }
+    
+    .main2 .nav-link.active {
+        color: rgba(0, 0, 0, 0.945);
+        font-weight: 500;
+        background-color: transparent;
+    }
+    
+    .main2 .tab-content {
+        text-align: center;
+        padding-right: 10%;
+        padding-left: 10%;
+        line-height: 27px;
+        margin-top: -5px;
+    }
+    
+    .main2 .tab-content img {
+        width: 450px;
+    }
+    /*
+    .
+    main3 menu produk
+    .
+    */
+    
+    .main3 {
+        background: rgba(247, 247, 247, 0.900);
+        padding-top: 30px;
+    }
+    
+    .main3 .background-titik {
+        background-image: url("assets/background-titik.png");
+        padding-top: 30px;
+    }
+    
+    .main3 .text-judul {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    
+    .main3 .card {
+        border: transparent;
+        background-color: rgba(189, 208, 221, 0.13);
+    }
+    
+    .main3 .card img {
+        width: 200px;
+        height: 135px;
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+    }
+    
+    .main3 .card h5 {
+        text-align: center;
+        margin-bottom: 15px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+    
+    .main3 .card p {
+        text-align: center;
+        font-size: 15px;
+    }
+    /*
+    .
+    main4 beli produk
+    .
+    */
+    
+    .main4 {
+        background: rgba(247, 247, 247, 0.900);
+        padding-top: 60px;
+    }
+    
+    .main4 .text-judul {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+    
+    .main4 .text-judul p {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .main4 h4 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .main4 h5 {
+        font-weight: 300;
+        line-height: 31px;
+    }
+    
+    .main4 video {
+        max-height: 295px;
+        width: auto;
+        opacity: 0.9;
+        border: none;
+    }
+    
+    .main4 button {
+        width: 170px;
+        height: 240px;
+        background-color: rgb(87, 192, 84);
+        border: transparent;
+    }
+    
+    .main4 button p {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    .main4 .card img {
+        height: 120px;
+        width: auto;
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        object-fit: contain;
+    }
+    
+    .main4 .link_instagram {
+        width: 160px;
+        height: 50px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+</style>
+
+<body>
+    <!-- navbar and carausel -->
+    <!-- main1 -->
+    <div class="main1">
+        <div>
+            <!-- Content here -->
+            <!-- navbar -->
+            <div class="navbar-hr" style="padding-top: 5px;">
+                <nav class="navbar navbar-expand-lg d-flex container">
+                    <a class="navbar-brand" href="#">MGI Club</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-lg-center " id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Tentang</a>
+                            <a class="nav-item nav-link" href="#">Produk MGI</a>
+                            <a class="nav-item nav-link" href="#">Beli Produk</a>
+                            <a class="nav-item nav-link" href="#">Testimoni</a>
+                            <a class="nav-item nav-link" href="#">Pertanyaan</a>
+                            <a class="nav-item nav-link" href="#">Kontak</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- / -->
+            <!-- carausel -->
+            <div class="carausel">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/carausel_kacamatamedis.png" class="img-fluid" alt="...">
+                                <div class="container">
+                                    <h4>Kacamata Medis IonSpec</h4>
+                                    <p>Kacamata IonSpec dari MGI yang telah melalui berbagai percobaan dan sertifikasi, serta pengujian klinis. dengan menggunakan bahan baku berkualitas tinggi, kuat, lentur , ergonomis dan kacamata medis berteknologi nano
+                                        jerman pertama & satu-satunya di dunia </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/carausel_manfaat.png" class="img-fluid" alt="...">
+                                <div class="container">
+                                    <h4>Manfaat kacamata IonSpec </h4>
+                                    <p>Kacamata medis IonSpec terbukti secara klinis membantu berbagai keluhan mata, seperti : Mata Lelah, Mata Kering, Rabun Jauh (minus), Rabun Dekat (plus), Silinder, Glaukoma, Katarak, Retinopathy, Maculopathy, Mata Berbayang
+                                        (Floater), Mata Malas, dan keluhan mata lainnya</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/carausel_donasi.png" class="img-fluid" alt="...">
+                                <div class="container">
+                                    <h4>Donasi kacamata Medis </h4>
+                                    <p>MGI mengadakan program donasi 1 juta pcs kacamata medis kepada para penderita glaukoma dan anak-anak dengan minus 5 ke atas dengan usia dibawah 16 tahun. jika kamu termasuk, daftarkan diri kamu sekarang juga</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/carausel_style.png" class="img-fluid" alt="...">
+                                <div class="container">
+                                    <h4>Kacamata medis ber style</h4>
+                                    <p>Selain kacamata ini bermanfaat untuk kesehatan, dan menggunakan bahan baku berkualitas tinggi. kacamata medis mgi ini menawarkan style kacamata yang keren, elegan untuk semua generasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+
+            <!-- button link wa -->
+            <div class="link_wa">
+                <center>
+                    <button type="button" class="btn btn-outline-dark"><img src="assets/whatsapp.png" alt="" style="width: 26px; height: auto;"> Whatsapp</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- Menu tentang -->
+    <!-- main2 -->
+    <div class="main2">
+        <div class=" about container">
+            <ul class="nav nav-pills mb-3 d-flex justify-content-lg-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-teknologi" role="tab" aria-controls="pills-home" aria-selected="true">Teknologi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-manfaat" role="tab" aria-controls="pills-profile" aria-selected="false">Manfaat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-tentang" role="tab" aria-controls="pills-contact" aria-selected="false">Tentang</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-teknologi" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    Mengapa produk-produk mgi menjadi produk kesehatan yang modern..? karna produk yang dibuat, menggunakan 72 tipe mineral diantaranya :
+                    <div>
+                        <img src="assets/teknologi_nano.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-manfaat" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    MGI menyediakan berbagai produk kesehatan dengan teknologi nano, yang sangat bermanfaat untuk kesehatan manusia, diantaranya : Mencegah & mengurangi radiasi, Menambah asupan oksigen ke mata & otak, Mencegah tumor & kanker otak, Mengatasi migrain dan pusing
+                    kepala, Mengurangi Sinusitis, Mengurangi Vertigo, Mengurangi radikal bebas, Melawan penuaan dini dan masih banyak lainnya
+                </div>
+                <div class="tab-pane fade " id="pills-tentang" role="tabpanel" aria-labelledby="pills-home-tab" style="text-align: justify;">
+                    MGI (Mega Gloryoung International) merupakan sebuah perusahaan pionir untuk pengadaan produk dengan energi berteknologi nano tingkat tinggi yang sangat bermanfaat untuk terapi kesehatan. teknologi didalamnya tergabung dari ilmu fisika, teknik , biologi
+                    molekuler, serta kimia. dan saat ini, teknolgi nano sangat dibutuhkan dalam dunia kesehatan. PT. Mega gloryoung International saat ini juga bekerjasama selama lebih dari 5 tahun dengan asosiasi mata glaukoma sedunia, dibawah naungan
+                    organisasi WHO dari PBB. dalam kegiatan sosial memberikan bantuan frame kacamata medis secara gratis kepada para penderita mata Glaukoma di seluruh dunia termasuk indonesia.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- Menu Produk -->
+    <!-- main3 -->
+    <div class="main3">
+        <div class="container background-titik">
+            <div class="text-judul">
+                <h3>Produk MGI</h3>
+                <p>Produk MGI bukan hanya kacamata medis, <br>ada juga beberapa produk kesehatan lainnya dengan teknologi nano. </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/kacamata_ionspec.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Kacamata Medis</h5>
+                            <p class="card-text"> Terbukti secara klinis membantu berbagai keluhan mata, seperti : minus, plus, katarak, glukoma dll</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/ionized_eyemask.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Ionized Eyemask</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/ionized_mask.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Ionized Mask</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/nano_belt.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Nano Belt</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row2 -->
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/anti_radiation.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Nano Guard Anti Radiation Chip</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/nano_knee_guard.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Nano Knee <br>Guard</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/socks_kaos.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Nano Socks <br> kaos kaki</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="" src="assets/produk/nano_tudung.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5>Nano Tudung</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- menu beli produk -->
+    <!-- main4 -->
+    <div class="main4">
+        <div class="container">
+            <div class="text-judul">
+                <h3>Beli Produk</h3>
+                <p style="padding-top:10px;">Kamu tau kan, kalau kacamata mines / plus itu hanya untuk membantumu, dan bukan untuk menyembuhkan penglihatanmu, yang ada mines / plus mu tambah tinggi. maka kacamata medis menjawab solusinya, buat kamu yang ingin sembuh normal dan tampil
+                    lebih gaya dan kerennn.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <video controls autoplay>
+                        <source src="assets/mgi_nano.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Bisa Memesan melalui :</h4>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <button class="btn btn-success">
+                                <img class="" src="assets/whatsapp.png" alt="Card image cap">
+                                <p>Whatsapp <br> 089668354665 </p>
+                            </button>
+                        </div>
+                        <div class="col-sm-8">
+                            <h5 style="padding-top:25px;">Kamu juga bisa kunjungi Instagramnya :</h5>
+                            <button type="button" class="btn btn-light link_instagram" style="background-color: #F0F0F0; margin-top: 15px;"><img src="assets/instagram.png" alt="" style="width: 26px; height: auto;"> mgiclub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- menu Testimoni -->
+    <!-- main5 -->
+    <div class="main4">
+        <div class="container">
+            <div class="text-judul">
+                <h3>Testimoni</h3>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+</body>
+
+</html>
